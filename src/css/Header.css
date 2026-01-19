@@ -1,0 +1,76 @@
+header {
+  background-color: #1a1a1a; /* Fond sombre comme sur la maquette */
+  color: #ffffff;
+  padding: 18px 45px;
+  display: flex;
+  justify-content: space-between; /* Place le nom à gauche et le nav à droite */
+  align-items: center; /* Aligne verticalement au centre */
+  text-transform: uppercase; /* Tout en majuscules pour correspondre au design */
+  font-family: 'Nunito Sans', sans-serif;
+}
+
+/* Le nom "John Doe" */
+header > div {
+  font-size: 1.3rem;
+}
+
+/* Menu de navigation */
+header nav ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+  gap: 17px; /* Espace entre les liens */
+}
+
+/* Liens du menu */
+header nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+header nav ul li a:hover {
+  opacity: 1;
+  color: #007bff; /* Changement de couleur au survol (optionnel) */
+}
+
+/* Style spécifique pour le lien "Home" actif (optionnel) */
+header nav ul li a.active {
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+}
+
+/* Responsive : On centre tout sur mobile */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 20px;
+  }
+  
+  header nav ul {
+    gap: 15px;
+  }
+}
+
+/* Style de base pour les liens */
+.nav-link {
+  color: #fff !important; /* Texte blanc */
+  text-transform: uppercase;
+  margin: 0 10px;
+  /* On prépare une bordure invisible pour éviter que le texte ne "saute" lors du clic */
+  border-bottom: 2px solid transparent; 
+  transition: all 0.3s ease-in-out;
+}
+
+/* LE SOULIGNEMENT LORS DU CLIC (Page active) */
+.nav-link.active {
+  border-bottom: 2px solid #fff !important; /* Trait blanc sous le texte */
+}
+
+/* Effet au survol (optionnel mais recommandé pour le W3C) */
+.nav-link:hover {
+  border-bottom: 2px solid #fff;
+}

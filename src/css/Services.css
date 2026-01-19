@@ -1,0 +1,96 @@
+.services-container {
+    width: 100%;
+}
+
+/* Bannière bleue */
+.banner {
+    height: 300px;
+    background-image: url('../images/banner.jpg'); /* Remplace par ton image */
+    background-size: cover;
+    background-position: center;
+}
+
+.services-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: -0px auto 0px; /* Remonte un peu sur la bannière si besoin */
+    padding: 0 20px;
+}
+
+.services-header {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background: white;
+    border-bottom: #007bff 7px solid;
+}
+
+.services-header h1 {
+    padding-top: 50px;
+    font-size: 2.2rem;
+}
+
+.services-header p {
+    font-size: 0.80rem;
+    margin-top: 10px;
+}
+
+/* Grille des services */
+.services-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.service-card {
+    background: white;
+    flex: 1;
+    padding: 0px 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px); /* Petit effet de survol */
+}
+
+.service-icon {
+    width: 80px; 
+    height: auto;
+    font-size: 3rem;
+    filter: invert(36%) sepia(85%) saturate(1750%) hue-rotate(195deg) brightness(98%) contrast(105%);
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.service-card h2 {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 0.95rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .services-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service-card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
