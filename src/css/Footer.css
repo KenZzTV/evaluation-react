@@ -1,0 +1,88 @@
+/* Style de la balise <footer> */
+footer {
+  background-color: #1e1e1e; /* Fond gris très foncé / noir */
+  color: #ffffff;
+  padding: 40px 20px;
+  font-family: sans-serif;
+}
+
+/* On cible le 1er div parent pour créer les 3 colonnes */
+footer > div {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Pour le responsive */
+  gap: 20px;
+}
+
+/* Style commun pour chaque bloc (colonne) */
+footer > div > div, 
+footer address {
+  flex: 1;
+  min-width: 250px; /* Largeur minimum avant de passer à la ligne */
+}
+
+/* Titres H4 */
+footer h4 {
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Texte et adresse */
+address {
+  font-style: normal;
+  line-height: 1.6;
+  font-size: 0.9rem;
+}
+
+address p {
+  margin: 0;
+  color: #ccc;
+}
+
+/* Liens du footer */
+footer a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* Listes (Liens utiles et Réalisations) */
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  margin-bottom: 8px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Section des logos réseaux sociaux */
+.social-icons { /* Ajoute cette classe à ton div contenant les img */
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+}
+
+footer img {
+  width: 24px;  /* Taille des icônes */
+  height: auto;
+  filter: brightness(0) invert(1); /* Rend les icônes blanches si elles sont noires */
+  opacity: 0.7;
+  transition: opacity 0.3s;
+}
+
+footer img:hover {
+  opacity: 1;
+}

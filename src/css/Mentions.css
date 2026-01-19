@@ -1,0 +1,71 @@
+/* Container principal */
+.mentions-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    min-height: 80vh;
+}
+
+/* Titre et barre bleue */
+.mentions-header h1 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.blue-bar {
+    margin: 0 auto 30px auto;
+    transition: width 0.3s ease;
+}
+
+/* Style de l'accordéon Bootstrap */
+.accordion-item {
+    border: 1px solid #dee2e6;
+    margin-bottom: 10px;
+}
+
+.accordion-button {
+    font-weight: 600;
+    color: #333;
+}
+
+/* Couleur quand l'accordéon est ouvert */
+.accordion-button:not(.collapsed) {
+    background-color: #f8f9fa;
+    color: #007bff;
+    box-shadow: none;
+}
+
+/* Suppression du contour bleu au clic (focus) */
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);
+}
+
+/* Style du contenu à l'intérieur */
+.accordion-body h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #212529;
+}
+
+.accordion-body address {
+    font-style: normal;
+    line-height: 1.6;
+}
+
+.accordion-body a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.accordion-body a:hover {
+    text-decoration: underline;
+}
+
+/* Icônes de contact */
+.accordion-body p {
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
