@@ -16,32 +16,30 @@ function Footer () {
     <footer>
       <div>
         <address>
-            <h4>John Doe</h4>
+            <p>John Doe</p>
             <p>40 rue Laure Diebold <br />
             69009 Lyon, France <br />
             10 20 30 40 50 <br />
             <a href="mailto:john.doe@gmail.com">john.doe@gmail.com</a>
             </p>
             <a href="https://github.com/github-john-doe" target="_blank" rel="nofollow noreferrer">
-              <img className="bi bi-github" src={github}/>
+              <img className="bi bi-github" alt="Logo GitHub" src={github}/>
             </a>
             <a href="https://twitter.com/twitter-john-doe" target="_blank" rel="nofollow noreferrer">
-              <img className="bi bi-twitter" src={twitter}/>
+              <img className="bi bi-twitter" alt="Logo Twitter" src={twitter}/>
             </a>
             <a href="https://www.linkedin.com/in/linkedin-john-doe" target="_blank" rel="nofollow noreferrer">
-              <img className="bi bi-linkedin" src={linkedin}/>
+              <img className="bi bi-linkedin" alt="Logo LinkedIn" src={linkedin}/>
             </a>
         </address>
         <div>
             <h4>Liens utiles</h4>
             <ul>
-              <nav>
                 <li><Link to="/">Acceuil</Link></li>
                 <li><Link to="/services">Services</Link></li>
                 <li><Link to="/portfolio">Portfolio</Link></li>
                 <li><Link to="/contact">Me Contacter</Link></li>
                 <li><Link to="/mentions-legales">Mentions légales</Link></li>
-              </nav>
             </ul>
         </div>
         <div>
