@@ -32,7 +32,7 @@ const Mentions = () => {
               Éditeur du site
             </button>
           </h2>
-          <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionMentions">
+          <div id="collapseOne" className="accordion-collapse collapse show" role="region" aria-labelledby="headingOne" data-bs-parent="#accordionMentions">
             <div className="accordion-body">
               <h3>John Doe</h3>
               <address>
@@ -51,7 +51,7 @@ const Mentions = () => {
               Hébergeur
             </button>
           </h2>
-          <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionMentions">
+          <div id="collapseTwo" className="accordion-collapse collapse" role="region" aria-labelledby="headingTwo" data-bs-parent="#accordionMentions">
             <div className="accordion-body">
               <p><strong>Alwaysdata</strong></p>
               <p>91 rue du Faubourg Saint-Honoré<br />75008 Paris</p>
@@ -67,7 +67,7 @@ const Mentions = () => {
               Crédits
             </button>
           </h2>
-          <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionMentions">
+          <div id="collapseThree" className="accordion-collapse collapse" role="region" aria-labelledby="headingThree" data-bs-parent="#accordionMentions">
             <div className="accordion-body">
               <p>Ce site a été réalisé par John Doe, étudiant au Centre Européen de formation.</p>
               <p>Les images utilisées sur ce site sont libres de droits et ont été obtenues sur le site <a href="https://pixabay.com/fr/" target="_blank" rel="noreferrer">Pixabay</a>.</p>

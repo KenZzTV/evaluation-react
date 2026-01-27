@@ -7,6 +7,7 @@ import seoIcon from '../images/search.svg';
 
 const Services = () => {
   return (
+    <main>
     <div className="services-container">
       {/* Bannière bleue en haut */}
       <div className="banner"></div>
@@ -17,7 +18,7 @@ const Services = () => {
           <p>Voici les prestations sur lesquelles je peux intervenir</p>
         </header>
 
-        <section className="services-grid">
+        <div className="services-grid">
           <article className="service-card">
             <img className="service-icon" src={uxDesignIcon} alt="UX Design" />
             <h2>UX Design</h2>
@@ -44,9 +45,10 @@ const Services = () => {
                   recherche(Google, Bing, Yahoo, etc.). L'objectif est
                   d'attirer un maximum de visiteurs qualifiés sur le site.</p>
           </article>
-        </section>
+        </div>
       </div>
     </div>
+    </main>
   );
 };
 

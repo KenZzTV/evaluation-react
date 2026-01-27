@@ -33,7 +33,7 @@ function Footer () {
             </a>
         </address>
         <div>
-            <h4>Liens utiles</h4>
+            <h3>Liens utiles</h3>
             <ul>
                 <li><Link to="/">Acceuil</Link></li>
                 <li><Link to="/services">Services</Link></li>
